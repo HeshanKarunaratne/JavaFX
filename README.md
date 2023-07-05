@@ -78,3 +78,40 @@ public class Main extends Application {
     }
 }
 ~~~
+
+- CSS
+~~~java
+package sample;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+public class Main extends Application {
+
+    @Override
+    public void start(Stage stage) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("example3.fxml"));
+        stage.setTitle("Hello World");
+
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
+~~~
+
+- Example list
+    1. example1: Scene Builder intro with some buttons
+    2. example2: Using buttons to move a Circle obj
+    3. example3: Adding CSS to obj
+    4. example4-1 and example4-2: Switching between scenes
+    

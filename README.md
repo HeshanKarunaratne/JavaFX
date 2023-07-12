@@ -1,6 +1,6 @@
 # JavaFX
 
-- How stages work in JavaFX
+- This documentation have multiple examples to different components
 
 ~~~java
 package sample;
